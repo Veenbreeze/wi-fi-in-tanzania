@@ -12,7 +12,7 @@ const Index = () => {
     {
       name: "Daily Pass",
       duration: "24 Hours",
-      price: "2,000",
+      price: "1,000",
       minutes: 1440,
       features: ["High-speed internet", "24/7 Support", "Multiple devices"],
     },
@@ -27,7 +27,7 @@ const Index = () => {
     {
       name: "Weekly Pass",
       duration: "7 Days",
-      price: "10,000",
+      price: "15,000",
       minutes: 10080,
       features: ["High-speed internet", "24/7 Support", "Multiple devices", "Priority access", "Best value"],
     },

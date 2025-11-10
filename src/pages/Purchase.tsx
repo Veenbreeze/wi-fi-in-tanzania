@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Wifi, CreditCard, CheckCircle2 } from "lucide-react";
@@ -15,6 +16,7 @@ const Purchase = () => {
   const location = useLocation();
   const [phone, setPhone] = useState("");
   const [loading, setLoading] = useState(false);
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const [selectedPackage, setSelectedPackage] = useState<any>(null);
   const [hotspots, setHotspots] = useState<any[]>([]);
   const [selectedHotspot, setSelectedHotspot] = useState("");
@@ -23,7 +25,7 @@ const Purchase = () => {
     {
       name: "Daily Pass",
       duration: "24 Hours",
-      price: "2,000",
+      price: "1,000",
       minutes: 1440,
     },
     {
@@ -35,7 +37,7 @@ const Purchase = () => {
     {
       name: "Weekly Pass",
       duration: "7 Days",
-      price: "10,000",
+      price: "15,000",
       minutes: 10080,
     },
   ];
